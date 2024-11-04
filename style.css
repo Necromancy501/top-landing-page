@@ -1,7 +1,7 @@
 /* stylesheet */
 
  * {
-    border: 0.5px solid red;
+    /* border: 0.5px solid red; */
     font-family: 'Roboto', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -22,6 +22,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 8px 150px 100px 150px;
+    gap: 40px;
 }
 
 .logo {
@@ -29,16 +30,17 @@ body {
     font-size: 24px;
 }
 
-#header {
+.header-links {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    gap: 40px;
+    flex-flow: row no-wrap;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
 .header-links a {
     font-weight: 18px;
     color: #E5E7EB;
+    flex: 0 1 auto;
 }
 
 /* BLUE BACKGROUND COLOR */
@@ -49,4 +51,197 @@ body {
     background: #1F2937;
 }
 
+/* IMAGE AND TEXT */
 
+.image-and-text {
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px 100px 150px;
+    gap: 20px
+}
+
+.image-and-text .left-side {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 450px;
+}
+
+.image-and-text .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.image-and-text h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    padding: 0px;
+    margin: 0px;
+    flex: 1 1 auto;
+    align-self: stretch;
+}
+
+.image-and-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    padding: 0px;
+    margin: 0px;
+    flex: 0 1 auto;
+}
+
+.image-and-text img {
+    width: 430px;
+    height: auto;
+    border: solid #3882f6 4px;
+    border-radius: 4px;
+}
+
+.image-and-text button {
+    background: #3882F6;
+    color: #F9FAF8;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 4px 24px 4px 24px;
+    border: 0.5px black solid;
+}
+
+/* CARROUSSEL */
+
+.carroussel-and-header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.carroussel-and-header h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.carroussel {
+    gap: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 100px;
+}
+
+.carroussel img {
+    width: 150px;
+    height: auto;
+    border: solid 6px #3882f6;
+    border-radius: 8px;
+}
+
+.carroussel-element {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 150px;
+    align-items: center;
+    justify-items: center;
+}
+
+.carroussel-element p {
+    text-align: center;
+    color: #1F2937;
+}
+
+/* QUOTE BOX */
+
+.quote-box {
+    display: flex;
+    flex-flow: column wrap;
+    align-self: stretch;
+    background: #E5E7EB;
+    align-content: center;
+}
+
+.quote-box p {
+    font-size: 36px;
+    width: 800px;
+    font: light italic;
+    color: #1F2937;
+    margin: 0;
+    padding:80px 0 0 0;
+}
+
+.quote-box h6 {
+    color: #1F2937;
+    font-size: 16px;
+    text-align: end;
+    margin: 0;
+    padding: 0px 0px 80px 0px;
+}
+
+/* BANNER */
+
+.blue-banner {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #3882F6;
+    align-self: center;
+    justify-self: center;
+    margin: 80px 0 80px 0;
+}
+
+.blue-banner .left-side {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 480px;
+    padding: 30px 120px 30px 80px;
+}
+
+.blue-banner h5 {
+    margin: 0px;
+    padding: 0px;
+    color: #f9faf8;
+    font-size: 16px;
+}
+
+.blue-banner p {
+    margin: 0px;
+    padding: 0px;
+    color: #E5E7EB;
+    flex: 1 0 auto;
+}
+
+.blue-banner .right-side {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-items: center;
+}
+
+.blue-banner button {
+    background: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 6px;
+    flex: 1 0 auto;
+    margin: 30px;
+    font-size: 16px;
+    width: 110px;
+    color: #F9FAF8;
+}
+
+/* FOOTER */
+
+#footer {
+    text-align: center;
+    color: #F9FAF8;
+    font-size: 16px;
+    height: 80px;
+}
+
+#footer p{
+    margin: 30px;
+}
